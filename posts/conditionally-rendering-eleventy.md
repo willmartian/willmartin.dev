@@ -8,9 +8,9 @@ tags:
 
 Sometimes, we want display content on a website only if certain conditions are met. This is known as *conditional rendering.*
 
-A very common usecase of this is content navigation links at the bottom of a blog post. We only want to link to the *Next Post* if it exists, likewise for the *Previous Post*. 
+A very common use case for this is content navigation links at the bottom of a blog post. We only want to link to the *Next Post* if it exists, likewise for the *Previous Post*. 
 
-<small>[Skip to example.](#real-world-example%3A-collection-navigation)</small>
+<small>[Skip to real world example.](#real-world-example%3A-collection-navigation)</small>
 
 ## If / Then / Else
 
@@ -53,7 +53,7 @@ However, since the ternary operator is an expression, we can also use it inside 
 
 Sometimes, we don't want to show anything if a condition is met.
 
-One way to accomplish this is using the ternary operator again, and returning an empty string if the provided condition is false.
+One way to accomplish this is using the ternary operator again, returning an empty string if the provided condition is false.
 
 ``` js
   render({ bool: false }) {
@@ -112,15 +112,15 @@ We have an extra `false` in our output! This is because the template is converti
 
 In the previous example, the output was the HTML string that we wanted to display, so all was well. In this example, our expression evaluates to `false`, and `String(false)` returns `"false"`. Similarly, conditions that evaluate to `null` will return the string `"null"`, and `undefinded` will return `"undefined"`.
 
-With this in mind, the simplest way to show to show binary content is to stick with the ternary operator and return an empty string for the unwanted case.
+With this in mind, the simplest way to show to show conditional content is to stick with the ternary operator and return an empty string for the unwanted case.
 
 ### But what if I reaaaally want to use the logical AND operator?
 
-Okay, understandable. They ARE more readable.
+Okay, understandable. They DO increase readability.
 
-One simple fix to the above issue is to use a [transform](https://www.11ty.dev/docs/config/#transforms) in your Eleventy config file. A transform--as the name implies--transforms the output content of our templates during the build process.
+One simple fix to the above issue is to use a [transform](https://www.11ty.dev/docs/config/#transforms) in your Eleventy config file. A transform—as the name implies—*transforms* the output content of templates during the build process.
 
-This `remove-falsy` transform will look for any occurances of `undefined`, `false`, or `null`, in our rendered templates and remove them if they are not escaped by a preceding `$`.
+This `remove-falsy` transform will look for any occurances of `undefined`, `false`, or `null` in our rendered templates and remove them if they are not escaped by a preceding `$`.
 
 ``` js 
   module.exports = function(eleventyConfig) {
@@ -142,7 +142,7 @@ This `remove-falsy` transform will look for any occurances of `undefined`, `fals
     });
   }
 ```
-Now we can use with logical binary operators without worrying about stringified [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values. 
+Now we can use with logical AND operators without worrying about stringified [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values. 
 ``` js
   render({ bool: false }) {
     return `
@@ -158,11 +158,9 @@ Now we can use with logical binary operators without worrying about stringified 
   <!-- Success! -->
 ```
 
-However, I find that I often forget to escape null, false, and undefined when writing blog posts. Rather than dealing with falsy words dissapearing from my website, I am okay with using the slightly more verbose ternary operator. 
+However, I find that I often forget to escape null, false, and undefined when writing blog posts! Rather than dealing with falsy words unintentionally dissapearing from my website, I am okay with using the slightly more verbose ternary operator. :)
 
 ## Real World Example: Collection Navigation
-
-Consider a 11ty.js template, Post. 
 
 ``` js
   class Post {
