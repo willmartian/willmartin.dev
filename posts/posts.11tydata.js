@@ -6,7 +6,5 @@ module.exports = {
             else return data.draft ? false : data.permalink;
         }
     },
-    tags: [
-        'posts'
-    ]
+    layout: 'layouts/post.11ty.js'
 };

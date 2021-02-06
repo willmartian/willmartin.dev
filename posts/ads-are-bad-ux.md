@@ -1,11 +1,10 @@
 ---
-title: "Funding the Internet: Micropayments (Draft)"
+title: "Ads are Bad UX (Draft)"
 description: What are our alternatives to online advertising?
 date: 2021-02-02
 tags:
-  - crypto
   - ux
-layout: layouts/post.njk
+draft: true
 ---
 
 *<small>This is a live draft document and may be updated frequently until this disclaimer is removed!</small>*
@@ -20,26 +19,41 @@ User-centered design (or its trendier rename, human-centered design, in case you
 
 TODO: How can ads diminish the following qualities?
 
-- **Useful**
-  - Does your website accomplish the goal of the user?
-- **Usable**
-  - There should be minimal roadblocks for users to accomplish the task they had in mind when visiting your website, whether this is finding information, enjoying a video, or purchasing an item. 
-- **Findable**
-  - Information on the website should be easy to navigate. 
-- **Credible**
-  - Users should be able to trust the content on your website.
-- **Accessible**
-  - Each of these other factors should be equally true for users of all backgrounds and abilities.
-- **Desirable**
-  - The visuals and aesthetics of the website should evoke positive feelings from the user. 
+### Useful
+
+Does your website accomplish the goal of the user?
+
+### Usable
+
+There should be minimal roadblocks for users to accomplish the task they had in mind when visiting your website, whether this is finding information, enjoying a video, or purchasing an item. 
+
+### Findable
+
+Information on the website should be easy to navigate. 
+
+### Credible
+
+Users should be able to trust the content on your website.
+
+### Accessible
+
+Each of these other factors should be equally true for users of all backgrounds and abilities.
+
+### Desirable
+
+The visuals and aesthetics of the website should evoke positive feelings from the user. 
 
 ## Possible Solution: Micropayments
 
 What if we just *asked* our users for compensation?
 
-Maybe it is crazy, but maybe it isn't. The open source community survives on this model, where frequest users of libraries are encouraged to donate or contribute work. We see this mentality growing outside of technology and into content as well, with platforms like Ko-fi, Buy Me a Coffee, Patreon, and so on becoming popular recepticles for online contributions.
+Maybe it is crazy, but maybe it isn't. The open source community survives on this model, where frequent users of libraries are encouraged to contribute work or donate. We see this mentality growing outside of technology and into content as well, with platforms like Ko-fi, Buy Me a Coffee, Patreon, and so on becoming popular recepticles for online contributions.
+
+Instead of extracting value from every single user (or, the percentage not using ad block), we should rather look to deliver experiences to our users that have inherent value--which tend to prompt payback.
 
 In a way, these small contributions--or, *micropayments*--are like busking.
+
+#### WCG Proposal
 
 #### Autotip and the Microtip Meta Tag
 
