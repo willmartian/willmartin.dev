@@ -14,7 +14,7 @@ A very common usecase of this is content navigation links at the bottom of a blo
 
 ## If / Then / Else
 
-In  JavaScript, we can evaluate an if / then / else condition using the *ternary operator*.
+In  JavaScript, we can evaluate an if / then / else condition using the [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator).
 
 ``` js 
   1 + 1 == 2 ? "Math works!" : "Math is broken!";
@@ -70,9 +70,9 @@ One way to accomplish this is using the ternary operator again, and returning an
 ``` html
   <h1>Hello World</h1>
 ```
-### Common Pitfalls: Binary Logical Operators
+### Common Pitfalls: The Logical AND Operator 
 
-Typically, we only need the ternary operatory if we are managing three pieces of information. If we only need to manage two pieces of information, we can use the logical AND operator: &&
+Typically, we only need the ternary operatory if we are managing three pieces of information. If we only need to manage two pieces of information, we can use the [logical AND operator: &&](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
 
 While this works when our conditional is true...
 
@@ -114,11 +114,11 @@ In the previous example, the output was the HTML string that we wanted to displa
 
 With this in mind, the simplest way to show to show binary content is to stick with the ternary operator and return an empty string for the unwanted case.
 
-### But what if I reaaaally want to use Binary Logical Operators?
+### But what if I reaaaally want to use the logical AND operator?
 
 Okay, understandable. They ARE more readable.
 
-One simple fix to the above issue is to use a Transform in your Eleventy config file. A transform--as the name implies--transforms the output content of our templates during the build process.
+One simple fix to the above issue is to use a [transform](https://www.11ty.dev/docs/config/#transforms) in your Eleventy config file. A transform--as the name implies--transforms the output content of our templates during the build process.
 
 This `remove-falsy` transform will look for any occurances of `undefined`, `false`, or `null`, in our rendered templates and remove them if they are not escaped by a preceding `$`.
 
@@ -142,7 +142,7 @@ This `remove-falsy` transform will look for any occurances of `undefined`, `fals
     });
   }
 ```
-Now we can use with logical binary operators without worrying about stringified falsy values. 
+Now we can use with logical binary operators without worrying about stringified [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values. 
 ``` js
   render({ bool: false }) {
     return `
@@ -158,7 +158,7 @@ Now we can use with logical binary operators without worrying about stringified 
   <!-- Success! -->
 ```
 
-However, I find that I often forget to escape null, false, and undefined when writing blog posts. Rather than dealing with words dissapearing from my website, I am okay with using the slightly more verbose ternary operator. 
+However, I find that I often forget to escape null, false, and undefined when writing blog posts. Rather than dealing with falsy words dissapearing from my website, I am okay with using the slightly more verbose ternary operator. 
 
 ## Real World Example: Collection Navigation
 

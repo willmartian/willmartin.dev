@@ -30,10 +30,16 @@ class Post {
   }
 
   render(data) {
-    return `<h1>${data.title}</h1>
+    return `<article>
+      <header>
+        <h1>${data.title}</h1>
+        <address>Written by <a rel="author" href="https://willmartin.dev/about">Will</a> on <time>${data.date.toDateString()}<time></address>
+      </header>
+      <br>
       ${data.content}
       <br>
       ${this.postNav(data)}
+      </article>
     `;
   }
 }

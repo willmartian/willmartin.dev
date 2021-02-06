@@ -47,7 +47,7 @@ main {
 main :first-child {
   margin-top: 0;
 }
-header {
+body > header {
   background-color: black;
   width: 100%;
   justify-content: center;
@@ -56,15 +56,21 @@ header {
   align-items: center;
 }
 
-header * {
+body > header * {
   color: white;
   display: flex;
 }
 
-header:after {
+/* header:after {
   content: "";
   display: table;
   clear: both;
+} */
+
+article > header > *:last-child {
+  border-bottom: 2px solid black;
+  padding-bottom: 1em;
+  width: max-content;
 }
 
 table {
