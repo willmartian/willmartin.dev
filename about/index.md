@@ -6,23 +6,20 @@ eleventyNavigation:
   order: 3
 ---
 
-**Some things that are very meaningful to me:**
-- my friends and family
-- social, racial, evironmental justice
-- democratic participation in government, work, life
+## I'm Will Martin
 
-**Some things that I find fascinating:**
-- the internet
-- software
-- bees
+- I'm from Norfolk, VA ← Atlanta, GA ← Hoschton, GA
+- I have strong convictions about social justice and combating classism.
+- I am pursuing a master's degree in information science at Florida State University. I think that the world of libraries is deeply intertwined with the world of the web.
+- I graduated from the Georgia Institute of Technology, where I studied psychology and computer science.
+- I have a lot to learn—doing my best to improve every day.
 
-**Some things that I enjoy:**
-- bubble tea
-- web development
-- playing video games with my buddies
-
-**Places you can find me online:**
+### Links
 - [Twitter](https://twitter.com/willmartindev)
 - [GitHub](https://github.com/willmartindev)
 - [LinkedIn](https://www.linkedin.com/in/willbmartin/)
 
+### Contact Me
+See something on my website that resonates with you? Wanna talk more about it? Wanna just say hi? Wanna work on something with me? Want to HIRE me? Well, email me! I look forward to chatting.
+
+<a href="mailto:contact@willmartin.dev" target="_blank" rel="noopener noreferrer">contact@willmartin.dev</a>

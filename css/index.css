@@ -20,6 +20,9 @@ body {
   background-color: var(--white);
   font-size: 1.05em;
 }
+a[href^="mailto:"]::before {
+  content: "📨 ";
+}
 main a[href]:not(.post-tag, .direct-link) {
   /* text-shadow: 0 7px 0 #bfdbfe;
   text-decoration: none; */
