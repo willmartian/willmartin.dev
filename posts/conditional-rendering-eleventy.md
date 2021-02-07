@@ -142,7 +142,7 @@ This `remove-falsy` transform will look for any occurances of `undefined`, `fals
     });
   }
 ```
-Now we can use with logical AND operators without worrying about stringified [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values. 
+Now we can use logical AND operators without worrying about stringified [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values. 
 ``` js
   render({ bool: false }) {
     return `
