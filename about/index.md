@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: About Me
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
 

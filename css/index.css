@@ -21,13 +21,19 @@ body {
   font-size: 1.05em;
 }
 main a[href]:not(.post-tag, .direct-link) {
-  box-shadow: inset 0 -7px 0 #bfdbfe;
-  text-decoration: none;
-  font-weight: normal;
-  color: black;
+  /* text-shadow: 0 7px 0 #bfdbfe;
+  text-decoration: none; */
+  color: #529df8;
+  font-weight: bold;
+  /* font-weight: normal; */
+  /* color: black; */
 }
 main a[href]:not(.post-tag, .direct-link):hover {
-  background-color: #bfdbfe;
+  background-color: #e6f1ff;
+}
+main a[href]:not(.post-tag, .direct-link):visited {
+  color: #7e52f8;
+  background-color: #e6f1ff;
 }
 p:last-child {
   margin-bottom: 0;
@@ -47,13 +53,19 @@ main {
 main :first-child {
   margin-top: 0;
 }
+
+article {
+  max-width: min-content;
+}
+
 body > header {
   background-color: black;
   width: 100%;
-  justify-content: center;
   position: sticky;
   top: 0;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body > header * {
@@ -104,9 +116,6 @@ pre {
   padding: 1em;
   margin: .5em 0;
   background-color: #f6f6f6;
-
-  width: min-content;
-  min-width: 37.5em;
 }
 .highlight-line {
   display: block;

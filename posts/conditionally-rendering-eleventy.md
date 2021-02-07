@@ -10,7 +10,7 @@ Sometimes, we want display content on a website only if certain conditions are m
 
 A very common use case for this is content navigation links at the bottom of a blog post. We only want to link to the *Next Post* if it exists, likewise for the *Previous Post*. 
 
-<small>[Skip to real world example.](#real-world-example%3A-collection-navigation)</small>
+<small>[Skip to a real world example.](#real-world-example%3A-collection-navigation)</small>
 
 ## If / Then / Else
 
