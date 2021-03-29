@@ -24,12 +24,8 @@ a[href^="mailto:"]::before {
   content: "📨 ";
 }
 main a[href]:not(.post-tag, .direct-link) {
-  /* text-shadow: 0 7px 0 #bfdbfe;
-  text-decoration: none; */
   color: #529df8;
   font-weight: bold;
-  /* font-weight: normal; */
-  /* color: black; */
 }
 main a[href]:not(.post-tag, .direct-link):hover {
   background-color: #e6f1ff;
@@ -44,43 +40,43 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  max-width: 37.5em;
 }
 p,
 .tmpl-post li {
   line-height: 1.45;
 }
 main {
-  padding: 2rem;
+  padding: 2em;
+  margin: auto;
+  max-width: 960px;
 }
 main :first-child {
   margin-top: 0;
 }
 
-article {
-  max-width: min-content;
-}
-
 body > header {
   background-color: black;
-  width: 100%;
   position: sticky;
   top: 0;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+body > header > div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 960px;
 }
 
 body > header * {
   color: white;
   display: flex;
 }
-
-/* header:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 article > header > *:last-child {
   border-bottom: 2px solid black;
@@ -154,8 +150,7 @@ pre {
 /* Header */
 .home {
   padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
+  margin: 1rem 0;
   font-size: 1em;
 }
 .home :link:not(:hover) {

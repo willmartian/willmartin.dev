@@ -4,6 +4,7 @@ description: "Show this if that, but dont show this unless both of those."
 date: 2021-02-06
 tags:
   - webdev
+  - JAMstack
 ---
 
 Sometimes, we want display content on a website only if certain conditions are met. This is known as *conditional rendering.*
