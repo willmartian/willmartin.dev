@@ -6,7 +6,7 @@ tags:
   - webdev
 ---
 
-Sometimes, we want display content on a website only if certain conditions are met. This is known as *conditional rendering.*
+Sometimes, we want to display content on a website only if certain conditions are met. This is known as *conditional rendering.*
 
 A very common use case for this is content navigation links at the bottom of a blog post. We only want to link to the *Next Post* if it exists, likewise for the *Previous Post*. 
 
